@@ -15,6 +15,7 @@ import (
 	"time"
 )
 
+// global variable so it is not created every time Crawl() is called
 var throttle = time.Tick(time.Second)
 
 // Crawl uses `fetcher` from the `mockfetcher.go` file to imitate a
